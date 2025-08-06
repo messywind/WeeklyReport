@@ -47,7 +47,7 @@
         <div class="daily-report-section">
           <h3>二、完成情况：</h3>
           <p v-for="plan in report.plans" :key="plan.id">
-            {{ plan.id }}. {{ plan.description }}，已完成，用时 {{ plan.workHours }} 小时。
+            {{ plan.id }}. 已完成，用时 {{ plan.workHours }} 小时。
           </p>
         </div>
         <div v-if="report.overtime.totalHours > 0" class="daily-report-section">
